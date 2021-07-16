@@ -1,0 +1,15 @@
+{
+	"name": "discord-scraper",
+	"version": "1.0.0",
+	"description": "",
+	"main": "scrape.js",
+	"scripts": {
+		"scrape": "node scrape.js"
+	},
+	"keywords": [],
+	"author": "aMD",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.21.1"
+	}
+}
