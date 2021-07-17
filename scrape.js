@@ -31,7 +31,7 @@ async function scrapeAndStore() {
 	}
 	if (!scrapeArray.length) return console.warn("Nothing found!");
 	const jsonObj = JSON.stringify(scrapeArray);
-	fs.writeFile("./scrapedMessages.json", jsonObj, (e) => {
+	fs.writeFile("./payloads/scraped.json", jsonObj, (e) => {
 		if (!e) {
 			console.log("Done!");
 		}

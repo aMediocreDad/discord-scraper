@@ -2,6 +2,10 @@
 
 This is a simple scraper that relies on node.js fetch requests.
 
+## Warning!
+
+Using this scraper can be classified as a self-bot, and [Discord has a fairly firm stance on self-bots](https://support.discord.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots-). Use at your own discretion.
+
 ## How To
 
 Clone or download the repo, `cd` into it and run `npm ci`.
@@ -39,8 +43,8 @@ Separate the _URI_ and the _Options object_ into the config-template.json like s
 ```json
 	"URI": "{https://discord.com/api/v9/channels/{channelId}}",
 	"options": {
-		"headers": {...},
-		...
+		"headers": {"..."},
+		"..."
 		"method": "GET",
 		"mode": "cors"
 	}
